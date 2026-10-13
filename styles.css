@@ -1,0 +1,323 @@
+.nav {
+    background-color: rgb(47, 47, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    padding: 0 20px;
+}
+
+.list2 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.list2 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.list2 a:hover {
+    color: #f0b429;
+}
+
+.list2 a.active-link {
+    color: #f0b429;
+    border-bottom: 2px solid #f0b429;
+    padding-bottom: 4px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* First button */
+.btn-primary {
+    background-color: #3030f0;
+    color: white;
+    border: 2px solid #3030f0;
+}
+
+/* Second button */
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Hover effects */
+.btn-primary:hover {
+    background-color: #1c1cb5;
+    border-color: #1c1cb5;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #3030f0;
+}
+
+.hero {
+    min-height: 430px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background:
+        url("cta.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.68);
+}
+
+.hero h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+.department-title {
+    text-align: center;
+    color: #123b57;
+    margin: 35px 0 25px;
+    font-weight: bold;
+}
+
+/* Cards container */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin: 0 11% 40px;
+}
+
+/* Individual cards */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+/* CIT card */
+.card.cit {
+    border-top: 6px solid #187b78;
+}
+
+/* DEHS card */
+.card.dehs {
+    border-top: 6px solid #e9b949;
+}
+
+.card h3 {
+    color: #123b57;
+    font-size: 1.35rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #187b78;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #123b57;
+    text-decoration: underline;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.about-values > div {
+    border-left: 4px solid #187b78;
+    padding: 5px 0 5px 15px;
+}
+
+.about-values i {
+    color: #187b78;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-values h4 {
+    color: #123b57;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about-values p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.footer{
+    text-align: center;
+}
+
+
+/* CIT STYLES */
+.page-head {
+    background: #0b4f5c;
+    color: #fff;
+    padding: 4rem 0 3rem;
+}
+
+.page-head h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+}
+
+.page-head .lead {
+    max-width: 60ch;
+    opacity: .9;
+}
+
+.top {
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .85rem;
+    color: #f0b429;
+    margin-bottom: .5rem;
+}
+
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: .4rem;
+    border-bottom: 3px solid #f0b429;
+    display: inline-block;
+    text-align: center;
+}
+
+.cit-card {
+    border: 1px solid #cfdbde;
+    border-top: 6px solid #0b4f5c;
+}
+
+.card-icon {
+    font-size: 1.8rem;
+    color: #0b4f5c;
+    margin-bottom: .75rem;
+    display: block;
+}
+
+.why {
+    background: #fff;
+    border-left: 6px solid #f0b429;
+}
+
+
+/* DEHS STYLES */
+.dehs-card {
+    border: 1px solid #cfdbde;
+    border-top: 6px solid #f0b429;
+}
+
+.button1{
+    text-align: center;
+}
+
+
+
+/* FACULTY STYLES */
+.filters button {
+    background: #fff;
+    color: #12262d;
+    border: 1px solid #cfdbde;
+    border-radius: 99px;
+    padding: .4rem 1rem;
+}
+
+.filters button[aria-pressed="true"] {
+    background: #0b4f5c;
+    color: #fff;
+    border-color: #0b4f5c;
+}
+
+.person {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.av {
+    flex: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #0b4f5c;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+}
+
+/* CONTACT STYLES */
+.info li b {
+    color: #0b4f5c;
+}
+
+.info i {
+    color: #f0b429;
+}
+
+.formcard {
+    border: 1px solid #cfdbde;
+    border-top: 6px solid #0b4f5c;
+}

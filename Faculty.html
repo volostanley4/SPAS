@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="nav">
+            <img src="logo.png" alt="mama ngina logo" style="height: 80px;">
+            <ul class="list2">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="CIT.html">
+                    <li>CIT</li>
+                </a>
+                <a href="DEHS.html">
+                    <li>DEHS</li>
+                </a>
+                <a href="Faculty.html" class="active-link">
+                    <li>Faculty</li>
+                </a>
+                <a href="contact page.html" style="padding-right:10px;">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- PAGE HEADER -->
+        <header class="page-head" style="padding-top: 0%;">
+            <div class="container">
+                <p class="top">School of Pure and Applied Sciences</p>
+                <h1>Our Faculty</h1>
+                <p class="lead">Meet the lecturers, researchers and technologists who teach, mentor and support
+                    students across the School of Pure and Applied Sciences.</p>
+                <a class="btn btn-warning" href="contact%20page.html">Contact the school</a>
+            </div>
+        </header>
+
+        <main class="container py-5">
+            <h2 class="section-title">Faculty members</h2>
+            <!-- FILTER BUTTONS -->
+            <div class="filters mb-4" role="group" aria-label="Filter by department">
+                <button class="btn btn-sm" aria-pressed="true" data-f="all">All</button>
+                <button class="btn btn-sm" aria-pressed="false" data-f="CIT">CIT</button>
+                <button class="btn btn-sm" aria-pressed="false" data-f="DEHS">DEHS</button>
+            </div>
+
+            <!-- STAFF CARDS -->
+            <div class="row g-4" id="people">
+                <div class="col-md-6 col-lg-4" data-d="CIT">
+                    <div class="card h-100 cit-card">
+                        <div class="card-body person">
+                            <div class="av">AC</div>
+                            <div>
+                                <h3 class="h5 mb-1">Dr.Peter.G.Murage</h3>
+                                <p class="mb-0 text-muted">Dean</p>
+                                <p class="mb-2 text-muted">Statistics & Programming</p>
+                                <span class="badge text-bg-secondary">CIT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-d="CIT">
+                    <div class="card h-100 cit-card">
+                        <div class="card-body person">
+                            <div class="av">BC</div>
+                            <div>
+                                <h3 class="h5 mb-1">Dr.Elijah Maseno</h3>
+                                <p class="mb-0 text-muted">Department Chair</p>
+                                <p class="mb-2 text-muted">Networks and Security</p>
+                                <span class="badge text-bg-secondary">CIT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-d="DEHS">
+                    <div class="card h-100 cit-card">
+                        <div class="card-body person">
+                            <div class="av">CC</div>
+                            <div>
+                                <h3 class="h5 mb-1">Dr.Michael Murimi</h3>
+                                <p class="mb-0 text-muted">Department Chair</p>
+                                <p class="mb-2 text-muted">Extension Studies</p>
+                                <span class="badge text-bg-secondary">DEHS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-d="CIT">
+                    <div class="card h-100 cit-card">
+                        <div class="card-body person">
+                            <div class="av">DC</div>
+                            <div>
+                                <h3 class="h5 mb-1">Dr.Jimrise.O.Ochwach</h3>
+                                <p class="mb-0 text-muted">Lecturer</p>
+                                <p class="mb-2 text-muted">Applied Mathematics</p>
+                                <span class="badge text-bg-secondary">CIT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-d="DEHS">
+                    <div class="card h-100 dehs-card">
+                        <div class="card-body person">
+                            <div class="av">ED</div>
+                            <div>
+                                <h3 class="h5 mb-1">Dr.Peter Mwangi</h3>
+                                <p class="mb-0 text-muted">Lecturer</p>
+                                <p class="mb-2 text-muted">Examination Coordinator</p>
+                                <span class="badge text-bg-secondary">DEHS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-d="DEHS">
+                    <div class="card h-100 dehs-card">
+                        <div class="card-body person">
+                            <div class="av">FD</div>
+                            <div>
+                                <h3 class="h5 mb-1">Dr.Benson Mburu</h3>
+                                <p class="mb-0 text-muted">Senior Lecturer</p>
+                                <p class="mb-2 text-muted">Environmental Health</p>
+                                <span class="badge text-bg-secondary">DEHS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-d="DEHS">
+                    <div class="card h-100 dehs-card">
+                        <div class="card-body person">
+                            <div class="av">HD</div>
+                            <div>
+                                <h3 class="h5 mb-1">Dr.Ruth Wambua</h3>
+                                <p class="mb-0 text-muted">Lecturer</p>
+                                <p class="mb-2 text-muted">Epidemiology</p>
+                                <span class="badge text-bg-secondary">DEHS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-d="CIT">
+                    <div class="card h-100 dehs-card">
+                        <div class="card-body person">
+                            <div class="av">GD</div>
+                            <div>
+                                <h3 class="h5 mb-1">Dr.Ruth Wambua</h3>
+                                <p class="mb-0 text-muted">ICT</p>
+                                <p class="mb-2 text-muted">Lab Technologist</p>
+                                <span class="badge text-bg-secondary">CIT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <div class="footer">
+            <hr>
+            <p><i class="fa-regular fa-copyright fa-xs"></i>2026 School of Pure and Applied Sciences</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

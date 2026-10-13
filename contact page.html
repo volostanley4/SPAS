@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="nav">
+            <img src="logo.png" alt="mama ngina logo" style="height: 80px;">
+            <ul class="list2">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="CIT.html">
+                    <li>CIT</li>
+                </a>
+                <a href="DEHS.html">
+                    <li>DEHS</li>
+                </a>
+                <a href="Faculty.html">
+                    <li>Faculty</li>
+                </a>
+                <a href="contact page.html" style="padding-right:10px;" class="active-link">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- PAGE HEADER -->
+        <header class="page-head" style="padding-top: 0%;">
+            <div class="container">
+                <p class="top">School of Pure and Applied Sciences</p>
+                <h1>Contact the School</h1>
+                <p class="lead mb-0">Ask about admissions, programmes or partnerships. We reply within three working
+                    days.</p>
+            </div>
+        </header>
+
+        <main class="container py-5">
+            <div class="row g-5">
+
+                <!-- OFFICE DETAILS -->
+                <div class="col-md-5">
+                    <h2 class="section-title">School office</h2>
+                    <ul class="list-group list-group-flush info">
+                        <li class="list-group-item">
+                            <i class="fa-solid fa-location-dot me-2"></i><b>Address</b><br>
+                            School of Pure and Applied Sciences<br>
+                            Mama Ngina University College<br>
+                            Block to be added, Kiambu County
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa-solid fa-envelope me-2"></i><b>Email</b><br>
+                            spas@university.example
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa-solid fa-phone me-2"></i><b>Phone</b><br>
+                            +254 000 000 000
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa-solid fa-clock me-2"></i><b>Office hours</b><br>
+                            Monday to Friday, 8:00 am to 5:00 pm
+                        </li>
+                    </ul>
+                    <p class="small text-muted mt-3">Contact details are placeholders. Replace them with the real ones.
+                    </p>
+                </div>
+
+                <!-- MESSAGE FORM -->
+                <div class="col-md-7">
+                    <h2 class="section-title">Send a message</h2>
+                    <div class="card formcard">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="n" class="form-label">Your name</label>
+                                <input id="n" class="form-control" autocomplete="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="e" class="form-label">Email</label>
+                                <input id="e" type="email" class="form-control" autocomplete="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="d" class="form-label">Enquiry about</label>
+                                <select id="d" class="form-select">
+                                    <option>General enquiry</option>
+                                    <option>CIT</option>
+                                    <option>DEHS</option>
+                                    <option>Admissions</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="m" class="form-label">Message</label>
+                                <textarea id="m" class="form-control" rows="5"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-warning" id="send">Send message</button>
+                            <div class="alert mt-3 d-none" id="out" role="status"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <div class="footer">
+            <hr>
+            <p><i class="fa-regular fa-copyright fa-xs"></i>2026 School of Pure and Applied Sciences</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
